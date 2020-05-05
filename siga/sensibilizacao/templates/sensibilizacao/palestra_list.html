@@ -1,0 +1,18 @@
+<html>
+<body>
+    <h1>Lista de Palestras</h1>
+    <a href="{% url 'palestra_create' %}">Criar Nova Palestra</a>
+    {% if palestras_list %}
+    <ul>
+        {% for palestra in palestras_list %}
+          <li>
+            <a href="{{ palestra.get_absolute_url }}">{{ palestra.titulo }}</a> <a href="{% url 'palestra-detail' palestra.pk %}">Detalhes</a> |<a href="{% url 'palestra_update' palestra.pk %}">Editar</a>|<a href="{% url 'palestra_delete' palestra.pk %}">Delete</a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+        <p>Nenhuma palestra cadastrada.</p>
+      {% endif %}  
+</body>
+
+</html>

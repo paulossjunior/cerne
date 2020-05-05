@@ -1,0 +1,13 @@
+<html>
+<body>
+    <h1>Delete Palestra</h1>
+
+<p>Are you sure you want to delete the Palestra: {{ palestra }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="Yes, delete.">
+</form>
+</body>
+
+</html>

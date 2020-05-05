@@ -8,3 +8,6 @@ class Palestra(models.Model):
     data_inicio = models.DateTimeField()
     data_fim = models.DateTimeField()
     servidor = models.ForeignKey(Servidor,on_delete=models.CASCADE, blank=True)
+
+    def __str__(self):
+        return self.titulo
