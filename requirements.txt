@@ -2,7 +2,7 @@ asgiref==3.2.7
 colorama==0.4.3
 commitizen==1.19.3
 decli==0.5.1
-Django==3.0.6
+Django==3.0.14
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 packaging==20.3
